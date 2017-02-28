@@ -587,6 +587,8 @@ div.panel-items .info-keys
 	content: "\f061";
 	font-family: fontawesome;
 }
-
-
-.
+@media screen and (max-width: 767px) {
+    div.panel-items nav {
+    	left:10%;
+    }
+}

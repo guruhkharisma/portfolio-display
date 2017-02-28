@@ -95,6 +95,20 @@ var portfolio = (function() {
 
 		} );
 
+		$("body").on("swipeleft",function(e){
+			e.preventDefault();
+			if ( $sectionWork.hasClass('scale-down') ) {
+  				$nextWorkItem.click();
+  			}
+  		});       
+
+  		$("body").on("swiperight",function(e){
+  			e.preventDefault();
+  			if ( $sectionWork.hasClass('scale-down') ) {
+  				$prevWorkItem.click();
+  			}
+  		}); 
+
 		
 		$nextWorkItem.on( 'click', function( event ) {
 			
