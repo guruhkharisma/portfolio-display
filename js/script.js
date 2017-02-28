@@ -126,6 +126,19 @@ var portfolio = (function() {
 
 		} );
 
+		$("body").on("keydown", function(e) {
+			if ( $sectionWork.hasClass('scale-down') ) {
+			  if(e.keyCode == 37) { // left
+			    $prevWorkItem.click();
+			  }
+			  else if(e.keyCode == 39) { // right
+			   	$nextWorkItem.click();
+			  }
+				
+			}
+		});
+
+
 		$prevWorkItem.on( 'click', function( event ) {
 			
 			if( isAnimating ) {
