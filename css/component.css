@@ -13,6 +13,14 @@
 
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
+[class^="icon-"] {
+  display: inline-block;
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
 *,
 *:after,
 *:before {
@@ -510,7 +518,9 @@ section.expand .icon-close {
 	}
 }
 
-div.panel-items .panel-info {
+div.panel-items .panel-info,
+div.panel-items .info-keys
+ {
 	position: absolute;
     z-index: 9999 !important;
     width: 400px;
@@ -525,10 +535,14 @@ div.panel-items .panel-info {
     opacity: 0;
 }
 
-.expand-item div.panel-items .panel-info {
+.expand-item div.panel-items .panel-info,
+.expand-item div.panel-items .info-keys
+ {
 	opacity: 0;
 }
-.expand-item div.panel-items-show .panel-info {
+.expand-item div.panel-items-show .panel-info,
+.expand-item div.panel-items-show .info-keys
+ {
 	opacity: 1;
 }
 
@@ -536,3 +550,43 @@ div.panel-items .panel-info {
     color: #555;
     text-transform: inherit;
 }
+
+.info-keys {
+	position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+    width: 60px !important;
+    font-size: 11px !important;
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.info-keys:before,
+.info-keys:after {
+	position: absolute;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+}
+
+.icon-info-keys:before {
+	left: 10px;
+	content: "\f060";
+	font-family: fontawesome;
+}
+
+.icon-info-keys:after {
+	right: 10px;
+	content: "\f061";
+	font-family: fontawesome;
+}
+
+
+.
