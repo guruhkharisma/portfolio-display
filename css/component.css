@@ -244,6 +244,12 @@ height: 140px;
 max-width: 100%;
 border-radius: 50%;
 opacity: 0.6;
+transition: opacity 0.5s ease 0s;
+-webkit-transition: opacity 0.5s ease 0s;
+-moz-transition: opacity 0.5s ease 0s;
+}
+.profile img:hover {
+    opacity: 1;
 }
 
 /* Custom content */
@@ -299,10 +305,17 @@ color:#999
 	padding: 0;
 	border: 8px solid rgba(0,0,0,0.1);
 }
+.content > ul li a:hover {
+    background: rgba(0,0,0,0.3);
+}
 
 .content > ul li a img {
 	display: block;
 	max-width: 100%;
+	opacity: 0.8;
+}
+.content > ul li a img:hover {
+	opacity: 1;
 }
 
 /* Panel Items */
