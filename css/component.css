@@ -174,7 +174,7 @@ a:hover {
 	top: 20px;
 	right: 20px;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 10000;
 	opacity: 0;
 	pointer-events: none;
 }
@@ -517,6 +517,7 @@ section.expand .icon-close {
 		width:100%;
 		display: block;
 	}
+
 	.content {
 		left: 20px;
 	    right: 20px;
@@ -535,7 +536,7 @@ div.panel-items .info-keys
  {
 	position: absolute;
     z-index: 9999 !important;
-    width: 400px;
+    width: auto;
     left: 50%;
     top: -92%;
     color: #fff;
