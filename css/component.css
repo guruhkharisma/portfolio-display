@@ -607,4 +607,8 @@ div.panel-items .info-keys
 	.intro-content {
 	    top: 10%;
 	}
+	.intro-content h2 > span:first-child {
+	    font-weight: 300;
+    /* font-size: 2em; */
+	}
 }
