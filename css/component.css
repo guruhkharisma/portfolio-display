@@ -625,6 +625,9 @@ div.panel-items .info-keys
 	    left: 0;
 	    background: #FFF;
 	}
+	.main.expand-item > section:nth-child(2) {
+    top: 0%;
+	}
 	.main > section {
 	    position: absolute;
 	    width: 100%;
