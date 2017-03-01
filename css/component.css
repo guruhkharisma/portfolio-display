@@ -592,3 +592,23 @@ div.panel-items .info-keys
     	left:10%;
     }
 }
+@media screen and (max-width: 767px) {
+    div.panel-items nav {
+    	left:10%;
+    }
+}
+@media screen and (max-width: 480px) {
+	.main > section:nth-child(2) {
+	    top: 50%;
+	    left: 0;
+	    background: #FFF;
+	}
+	.main > section {
+	    position: absolute;
+	    width: 100%;
+	    height: 50%;
+	}
+	.intro-content {
+	    top: 10%;
+	}
+}
