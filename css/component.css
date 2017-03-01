@@ -517,6 +517,17 @@ section.expand .icon-close {
 		width:100%;
 		display: block;
 	}
+	.content {
+		left: 20px;
+	    right: 20px;
+	    bottom: 20px;
+	    padding: 0 10px;
+	}
+
+	.content ul li {
+		margin: 3% 1%;
+	}
+
 }
 
 div.panel-items .panel-info,
@@ -608,6 +619,13 @@ div.panel-items .info-keys
 	.intro-content {
 	    top: 10%;
 	}
+	.intro-content h2 > span:first-child {
+	    font-weight: 300;
+     	font-size: inherit; 
+	}
+}
+
+@media screen and (max-width: 767px)  {
 	.intro-content h2 > span:first-child {
 	    font-weight: 300;
      	font-size: inherit; 
