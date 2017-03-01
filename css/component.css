@@ -312,7 +312,7 @@ color:#999
 .content > ul li a img {
 	display: block;
 	max-width: 100%;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 .content > ul li a img:hover {
 	opacity: 1;
