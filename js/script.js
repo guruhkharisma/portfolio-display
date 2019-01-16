@@ -13,7 +13,11 @@ var portfolio = (function() {
 
 		$panelInfo = $workPanelsContainer.find( '.panel-info'),
 
+
 		totalWorkPanels = $workPanels.length,
+
+		$workInfo = $(".work_count"),
+
 		 
 		$nextWorkItem = $workPanelsContainer.find( 'nav > span.next-work' ),
 
@@ -40,6 +44,8 @@ var portfolio = (function() {
 	}
 
 	function initEvents() {
+
+		$workInfo.html( totalWorkPanels - 1 );
 		
 		$sections.each( function() {
 			
@@ -86,8 +92,8 @@ var portfolio = (function() {
 
 			currentWorkPanel = $panel.index();
 
-
 			$panelInfo.html( currentWorkPanel + '/' + (totalWorkPanels - 1) );
+			
 
 			$panel.addClass( 'show-work' );
 
@@ -118,7 +124,7 @@ var portfolio = (function() {
 			isAnimating = true;
 
 			var $currentPanel = $workPanels.eq( currentWorkPanel );
-			console.log("current = " + currentWorkPanel + ", totalWorkPanels = " + totalWorkPanels);
+			// console.log("current = " + currentWorkPanel + ", totalWorkPanels = " + totalWorkPanels);
 			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 1;
 			var $nextPanel = $workPanels.eq( currentWorkPanel );
 			$panelInfo.html( currentWorkPanel + '/' + (totalWorkPanels - 1) );
